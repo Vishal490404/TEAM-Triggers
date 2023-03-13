@@ -1,60 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:student_facilitation_1/Screens/Signin.dart';
 
 void main() {
-  runApp(const Team());
+  runApp(const Teame());
 }
 
-class Team extends StatefulWidget {
-  const Team({super.key});
+class Teame extends StatefulWidget {
+  const Teame({super.key});
 
   @override
-  State<Team> createState() => _TeamState();
+  State<Teame> createState() => _TeameState();
 }
 
-class _TeamState extends State<Team> {
+class _TeameState extends State<Teame> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        backgroundColor: Colors.,
-        body: Padding(
-          padding: const EdgeInsets.all(16.0),
-          child: Column(
-            children: [
-              const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'User Name',
-                  hintText: 'College Email Id',
-                ),
-              ),
-              const SizedBox(
-                height: 30.0,
-              ),
-              const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Password',
-                  hintText: 'PRN',
-                ),
-              ),
-              const SizedBox(
-                height: 20.0,
-              ),
-              ElevatedButton(
-                onPressed: () {},
-                child: const Text('Sign In'),
-              )
-            ],
-          ),
-        ),
-        appBar: AppBar(
-          title: const Center(
-            child: Text('Student Facilitation'),
-          ),
-          backgroundColor: Colors.green[800],
-        ),
-      ),
+    return const MaterialApp(
+      home: SignIn(),
     );
   }
 }
