@@ -1,20 +1,14 @@
+
+import 'package:brew_crew/screens/authenticate/authenticate.dart';
+import 'package:brew_crew/screens/home/home.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
-  const Home({super.key});
-  @override
-  State<Home> createState() => _HomeState();
-}
-
-class _HomeState extends State<Home> {
-  @override
+ class Wrapper extends StatelessWidget {
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        home: Scaffold(
-      backgroundColor: Colors.lightBlueAccent,
-      body: Center(
-        child: Text('Vishal is a good boy'),
-      ),
-    ));
+
+   
+    return Home();
+    return Authenticate();
+
   }
 }
